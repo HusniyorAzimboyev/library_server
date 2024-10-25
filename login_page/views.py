@@ -9,3 +9,5 @@ def log_in(request):
         model.save()
         print(request.POST)
     return render(request,'login.html')
+def new_page(request):
+    return render(request,'login.html')
