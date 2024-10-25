@@ -20,5 +20,6 @@ class Book(models.Model):
     name = models.CharField(max_length=100)
     genre = models.ForeignKey(Genre,on_delete=models.CASCADE)
     author = models.ForeignKey(Author,on_delete=models.CASCADE,related_name='books')
+    print("Books model is being used")
     def __str__(self):
         return self.name
