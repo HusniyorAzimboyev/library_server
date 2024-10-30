@@ -19,9 +19,9 @@
 			<div class="form-left">
 				<img src="{% static 'images/form-v7.jpg' %}" alt="form">
 				<p class="text-1">Sign Up</p>
-				<p class="text-2">Privaci policy & Term of service</p>
+				<p class="text-2">Privacy policy & Term of service</p>
 			</div>
-			<form class="form-detail" method="POST" id="myform">
+			<form class="form-detail" method="POST"  id="myform">
 				{% csrf_token %}
 				<div class="form-row">
 					<label for="username">USERNAME</label>
@@ -41,6 +41,7 @@
 				</div>
 				<div class="form-row-last">
 					<input type="submit" name="register" class="register" value="Register">
+					<button type="submit">Submit</button>
 					<p>Or<a href="#">Sign in</a></p>
 				</div>
 			</form>

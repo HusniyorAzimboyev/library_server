@@ -1,7 +1,7 @@
 from django.forms import ModelForm
-from .models import upper
+from .models import just_log
 class signupform(ModelForm):
     class Meta:
-        model = upper
+        model = just_log
         fields = "__all__"
     print('form_section')

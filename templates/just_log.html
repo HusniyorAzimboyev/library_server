@@ -1,12 +1,14 @@
 <form method="POST" action="">
     {% csrf_token %}
 
-    <label for="username">Username:</label>
-    <input type="text" name="username" id="username" required>
+    <label for="username">Name:</label>
+    <input type="text" name="name" id="username" required>
 
-    <label for="password">Password:</label>
-    <input type="password" name="password" id="password" required>
+    <label>Surname:</label>
+    <input type="text" name="surname">
 
+    <labe>Age:</labe>
+    <input type="text" name="age">
     <!-- You can also use a submit button -->
     <input type="submit" value="Log In">
 </form>
