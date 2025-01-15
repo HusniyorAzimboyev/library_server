@@ -20,5 +20,5 @@ def users_table(request):
     """
     for i in queryset:
         html+=f"<tr><td>{i.id}</td><td>{i.name}</td><td>{i.surname}</td><td>{i.age}</td></tr>"
-    html+="</table>"
+    html += "</table>"
     return HttpResponse(html)
